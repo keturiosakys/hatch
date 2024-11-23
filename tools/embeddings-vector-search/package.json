@@ -1,0 +1,19 @@
+{
+  "name": "rag-embeddings",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/pg": "^8.11.10",
+    "drizzle-kit": "^0.28.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.36.4",
+    "marked": "^15.0.2",
+    "openai": "^4.73.0",
+    "pg": "^8.13.1"
+  }
+}
