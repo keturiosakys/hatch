@@ -1,15 +1,8 @@
 {
-  "name": "hatch",
-  "scripts": {
-    "dev": "wrangler dev",
-    "deploy": "wrangler deploy --minify",
-    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
-  },
-  "dependencies": {
-    "hono": "^4.6.11"
-  },
-  "devDependencies": {
-    "@cloudflare/workers-types": "^4.20241112.0",
-    "wrangler": "^3.88.0"
-  }
+	"name": "hatch-monorepo",
+	"scripts": {
+		"dev:api": "pnpm --filter hatch dev",
+		"dev:web": "pnpm --filter hatch-web dev"
+	},
+	"license": "MIT"
 }
